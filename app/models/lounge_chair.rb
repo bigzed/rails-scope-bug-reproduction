@@ -1,0 +1,2 @@
+class LoungeChair < Chair
+end

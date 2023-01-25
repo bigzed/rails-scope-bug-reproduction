@@ -1,0 +1,2 @@
+class SwingChair < Chair
+end
