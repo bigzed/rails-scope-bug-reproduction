@@ -44,14 +44,15 @@ RSpec.describe Room, type: :model do
       let!(:red_chair) { LoungeChair.create(room_id: room.id, color: 'red') }
 
       it 'is not empty' do
-        expect(scope).to be_empty
+        scope.niceql
+        expect(scope).not_to be_empty
       end
     end
 
     context 'when there is a blue lounge chair' do
       let!(:red_chair) { LoungeChair.create(room_id: room.id, color: 'blue') }
 
-      it 'is not empty' do
+      it 'is empty' do
         expect(scope).to be_empty
       end
     end
@@ -108,6 +109,7 @@ RSpec.describe Room, type: :model do
       let!(:red_chair) { SwingChair.create(room_id: room.id, color: 'red') }
 
       it 'is not empty' do
+        scope.niceql
         expect(scope).to be_empty
       end
     end

@@ -1,24 +1,5 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Having a `Room` that can have many `Chairs`, where `Chairs` is an STI with the subclasses `LoungeChair` and
+`SwingChair`, we can trigger a scope bug when combine two scopes on `Room` to filter with specific chairs.
+This `Rails` contains a peproduction. To trigger run `rspec --format d`, which will also print the actual SQL.

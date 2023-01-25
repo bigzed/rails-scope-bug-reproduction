@@ -125,6 +125,7 @@ GEM
       timeout
     net-smtp (0.3.3)
       net-protocol
+    niceql (0.6.1)
     nio4r (2.5.8)
     nokogiri (1.14.0-x86_64-linux)
       racc (~> 1.4)
@@ -154,6 +155,9 @@ GEM
       nokogiri (>= 1.6)
     rails-html-sanitizer (1.5.0)
       loofah (~> 2.19, >= 2.19.1)
+    rails_sql_prettifier (7.0.4)
+      activerecord (>= 7)
+      niceql (~> 0.6)
     railties (7.0.4.2)
       actionpack (= 7.0.4.2)
       activesupport (= 7.0.4.2)
@@ -235,6 +239,7 @@ DEPENDENCIES
   jbuilder
   puma (~> 5.0)
   rails (~> 7.0.4, >= 7.0.4.2)
+  rails_sql_prettifier
   redis (~> 4.0)
   rspec-rails
   selenium-webdriver
